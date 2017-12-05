@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GCDWebServer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GDataXML-HTML.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WanderFloorPlan.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WanderFloorPlanTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WanderFloorPlanUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>26BD8F8097DEFFDEB40E1B7571FF7AAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B8B0ED1046111D92895FC95F12DBC10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1BCE59032E2A259035AC3752195483F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D72BDF62692B8BEB8904D327380ACE1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F072A69414208F7F8A2D97654F43A2B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

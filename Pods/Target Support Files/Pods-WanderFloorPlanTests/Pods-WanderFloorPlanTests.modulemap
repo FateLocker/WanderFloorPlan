@@ -1,0 +1,6 @@
+framework module Pods_WanderFloorPlanTests {
+  umbrella header "Pods-WanderFloorPlanTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

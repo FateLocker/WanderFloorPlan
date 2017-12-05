@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D87E152FF0CF5EF96C252F /* Pods_WanderFloorPlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C9BA4A26E0404CF0406C93 /* Pods_WanderFloorPlan.framework */; };
+		6E7096532141F803335F16C4 /* Pods_WanderFloorPlanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E4215866A2A3AEE7FB6FEE /* Pods_WanderFloorPlanTests.framework */; };
+		72BF05B750515320DDB0D7FB /* Pods_WanderFloorPlanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB473D7E1E41AFD09E660674 /* Pods_WanderFloorPlanUITests.framework */; };
+		852916721FB2DEDA002C54A4 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 852916711FB2DEDA002C54A4 /* map@2x.png */; };
+		854BDD911FCBB9D0007130C6 /* navigationImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 854BDD901FCBB9D0007130C6 /* navigationImage.png */; };
+		854BDD931FCBEBA5007130C6 /* MathematicalFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854BDD921FCBEBA5007130C6 /* MathematicalFormula.swift */; };
+		8566E34A1FC7EE2D00ACB37F /* IMInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8566E3491FC7EE2D00ACB37F /* IMInstance.swift */; };
+		8583C8901FC559B400AA64D7 /* MouseEventImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583C88F1FC559B400AA64D7 /* MouseEventImageView.swift */; };
+		858821351FCD3E3A00014A44 /* XMLParserTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858821341FCD3E3A00014A44 /* XMLParserTool.swift */; };
+		858B24251FD66AB00063F826 /* ModuleFileManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858B24241FD66AB00063F826 /* ModuleFileManger.swift */; };
+		85C846331FB05826009801CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C846321FB05826009801CF /* AppDelegate.swift */; };
+		85C846351FB05826009801CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C846341FB05826009801CF /* ViewController.swift */; };
+		85C846371FB05826009801CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C846361FB05826009801CF /* Assets.xcassets */; };
+		85C8463A1FB05826009801CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C846381FB05826009801CF /* Main.storyboard */; };
+		85C846451FB05827009801CF /* WanderFloorPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C846441FB05827009801CF /* WanderFloorPlanTests.swift */; };
+		85C846501FB05827009801CF /* WanderFloorPlanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8464F1FB05827009801CF /* WanderFloorPlanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85C846411FB05827009801CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C846271FB05826009801CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C8462E1FB05826009801CF;
+			remoteInfo = WanderFloorPlan;
+		};
+		85C8464C1FB05827009801CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C846271FB05826009801CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C8462E1FB05826009801CF;
+			remoteInfo = WanderFloorPlan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006319CA994CD06845AF6C4F /* Pods-WanderFloorPlanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderFloorPlanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanderFloorPlanTests/Pods-WanderFloorPlanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		07C9BA4A26E0404CF0406C93 /* Pods_WanderFloorPlan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanderFloorPlan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BB88B064950D0D0316120C /* Pods-WanderFloorPlanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderFloorPlanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanderFloorPlanUITests/Pods-WanderFloorPlanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C54483C4043AE4F306FFB92 /* Pods-WanderFloorPlanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderFloorPlanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WanderFloorPlanUITests/Pods-WanderFloorPlanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		851AFF351FB14F6400DBDE52 /* WanderFloorPlan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WanderFloorPlan.entitlements; sourceTree = "<group>"; };
+		852916711FB2DEDA002C54A4 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
+		854BDD901FCBB9D0007130C6 /* navigationImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationImage.png; sourceTree = "<group>"; };
+		854BDD921FCBEBA5007130C6 /* MathematicalFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathematicalFormula.swift; sourceTree = "<group>"; };
+		8566E3491FC7EE2D00ACB37F /* IMInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMInstance.swift; sourceTree = "<group>"; };
+		8583C88F1FC559B400AA64D7 /* MouseEventImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseEventImageView.swift; sourceTree = "<group>"; };
+		858821341FCD3E3A00014A44 /* XMLParserTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserTool.swift; sourceTree = "<group>"; };
+		858821371FCD415200014A44 /* WanderFloorPlan-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WanderFloorPlan-Bridging-Header.h"; sourceTree = "<group>"; };
+		858B24241FD66AB00063F826 /* ModuleFileManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFileManger.swift; sourceTree = "<group>"; };
+		85C8462F1FB05826009801CF /* WanderFloorPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderFloorPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C846321FB05826009801CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85C846341FB05826009801CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85C846361FB05826009801CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85C846391FB05826009801CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85C8463B1FB05826009801CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C846401FB05827009801CF /* WanderFloorPlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanderFloorPlanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C846441FB05827009801CF /* WanderFloorPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderFloorPlanTests.swift; sourceTree = "<group>"; };
+		85C846461FB05827009801CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C8464B1FB05827009801CF /* WanderFloorPlanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanderFloorPlanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C8464F1FB05827009801CF /* WanderFloorPlanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderFloorPlanUITests.swift; sourceTree = "<group>"; };
+		85C846511FB05827009801CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B319CD1E73856001FDE58DFB /* Pods-WanderFloorPlanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderFloorPlanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WanderFloorPlanTests/Pods-WanderFloorPlanTests.release.xcconfig"; sourceTree = "<group>"; };
+		D1A3A7CE91B422D65F635EDF /* Pods-WanderFloorPlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderFloorPlan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanderFloorPlan/Pods-WanderFloorPlan.debug.xcconfig"; sourceTree = "<group>"; };
+		DB473D7E1E41AFD09E660674 /* Pods_WanderFloorPlanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanderFloorPlanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E4215866A2A3AEE7FB6FEE /* Pods_WanderFloorPlanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanderFloorPlanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F970B96A8DFEAE99276B2B97 /* Pods-WanderFloorPlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanderFloorPlan.release.xcconfig"; path = "Pods/Target Support Files/Pods-WanderFloorPlan/Pods-WanderFloorPlan.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C8462C1FB05826009801CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D87E152FF0CF5EF96C252F /* Pods_WanderFloorPlan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8463D1FB05826009801CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7096532141F803335F16C4 /* Pods_WanderFloorPlanTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C846481FB05827009801CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72BF05B750515320DDB0D7FB /* Pods_WanderFloorPlanUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5761ADE5D0830AC14FF37814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07C9BA4A26E0404CF0406C93 /* Pods_WanderFloorPlan.framework */,
+				F7E4215866A2A3AEE7FB6FEE /* Pods_WanderFloorPlanTests.framework */,
+				DB473D7E1E41AFD09E660674 /* Pods_WanderFloorPlanUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85C846261FB05826009801CF = {
+			isa = PBXGroup;
+			children = (
+				858821371FCD415200014A44 /* WanderFloorPlan-Bridging-Header.h */,
+				854BDD901FCBB9D0007130C6 /* navigationImage.png */,
+				852916711FB2DEDA002C54A4 /* map@2x.png */,
+				85C846311FB05826009801CF /* WanderFloorPlan */,
+				85C846431FB05827009801CF /* WanderFloorPlanTests */,
+				85C8464E1FB05827009801CF /* WanderFloorPlanUITests */,
+				85C846301FB05826009801CF /* Products */,
+				ADAE10361DD4580279FCF46A /* Pods */,
+				5761ADE5D0830AC14FF37814 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85C846301FB05826009801CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85C8462F1FB05826009801CF /* WanderFloorPlan.app */,
+				85C846401FB05827009801CF /* WanderFloorPlanTests.xctest */,
+				85C8464B1FB05827009801CF /* WanderFloorPlanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85C846311FB05826009801CF /* WanderFloorPlan */ = {
+			isa = PBXGroup;
+			children = (
+				851AFF351FB14F6400DBDE52 /* WanderFloorPlan.entitlements */,
+				858B24241FD66AB00063F826 /* ModuleFileManger.swift */,
+				858821341FCD3E3A00014A44 /* XMLParserTool.swift */,
+				85C846321FB05826009801CF /* AppDelegate.swift */,
+				85C846341FB05826009801CF /* ViewController.swift */,
+				85C846361FB05826009801CF /* Assets.xcassets */,
+				85C846381FB05826009801CF /* Main.storyboard */,
+				85C8463B1FB05826009801CF /* Info.plist */,
+				8583C88F1FC559B400AA64D7 /* MouseEventImageView.swift */,
+				8566E3491FC7EE2D00ACB37F /* IMInstance.swift */,
+				854BDD921FCBEBA5007130C6 /* MathematicalFormula.swift */,
+			);
+			path = WanderFloorPlan;
+			sourceTree = "<group>";
+		};
+		85C846431FB05827009801CF /* WanderFloorPlanTests */ = {
+			isa = PBXGroup;
+			children = (
+				85C846441FB05827009801CF /* WanderFloorPlanTests.swift */,
+				85C846461FB05827009801CF /* Info.plist */,
+			);
+			path = WanderFloorPlanTests;
+			sourceTree = "<group>";
+		};
+		85C8464E1FB05827009801CF /* WanderFloorPlanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85C8464F1FB05827009801CF /* WanderFloorPlanUITests.swift */,
+				85C846511FB05827009801CF /* Info.plist */,
+			);
+			path = WanderFloorPlanUITests;
+			sourceTree = "<group>";
+		};
+		ADAE10361DD4580279FCF46A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1A3A7CE91B422D65F635EDF /* Pods-WanderFloorPlan.debug.xcconfig */,
+				F970B96A8DFEAE99276B2B97 /* Pods-WanderFloorPlan.release.xcconfig */,
+				006319CA994CD06845AF6C4F /* Pods-WanderFloorPlanTests.debug.xcconfig */,
+				B319CD1E73856001FDE58DFB /* Pods-WanderFloorPlanTests.release.xcconfig */,
+				51BB88B064950D0D0316120C /* Pods-WanderFloorPlanUITests.debug.xcconfig */,
+				5C54483C4043AE4F306FFB92 /* Pods-WanderFloorPlanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85C8462E1FB05826009801CF /* WanderFloorPlan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C846541FB05827009801CF /* Build configuration list for PBXNativeTarget "WanderFloorPlan" */;
+			buildPhases = (
+				EA8FFDF6100A618ABEF1A0BF /* [CP] Check Pods Manifest.lock */,
+				85C8462B1FB05826009801CF /* Sources */,
+				85C8462C1FB05826009801CF /* Frameworks */,
+				85C8462D1FB05826009801CF /* Resources */,
+				DBF23FCAE05FA8C4A8584BFE /* [CP] Embed Pods Frameworks */,
+				7D46F2481DA3204202AF97CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WanderFloorPlan;
+			productName = WanderFloorPlan;
+			productReference = 85C8462F1FB05826009801CF /* WanderFloorPlan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85C8463F1FB05826009801CF /* WanderFloorPlanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C846571FB05827009801CF /* Build configuration list for PBXNativeTarget "WanderFloorPlanTests" */;
+			buildPhases = (
+				D7339BE354920B2A84CF8F6B /* [CP] Check Pods Manifest.lock */,
+				85C8463C1FB05826009801CF /* Sources */,
+				85C8463D1FB05826009801CF /* Frameworks */,
+				85C8463E1FB05826009801CF /* Resources */,
+				50EAAE1299E093AD24E440C2 /* [CP] Embed Pods Frameworks */,
+				EC2B7A2CA1936AC14AAD7339 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C846421FB05827009801CF /* PBXTargetDependency */,
+			);
+			name = WanderFloorPlanTests;
+			productName = WanderFloorPlanTests;
+			productReference = 85C846401FB05827009801CF /* WanderFloorPlanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85C8464A1FB05827009801CF /* WanderFloorPlanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C8465A1FB05827009801CF /* Build configuration list for PBXNativeTarget "WanderFloorPlanUITests" */;
+			buildPhases = (
+				83D806E7022C51D493274A80 /* [CP] Check Pods Manifest.lock */,
+				85C846471FB05827009801CF /* Sources */,
+				85C846481FB05827009801CF /* Frameworks */,
+				85C846491FB05827009801CF /* Resources */,
+				147E6CCD54C3BD33FC545AC8 /* [CP] Embed Pods Frameworks */,
+				DAA74795479D83C0C4F42610 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C8464D1FB05827009801CF /* PBXTargetDependency */,
+			);
+			name = WanderFloorPlanUITests;
+			productName = WanderFloorPlanUITests;
+			productReference = 85C8464B1FB05827009801CF /* WanderFloorPlanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85C846271FB05826009801CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = IDEAMAKE;
+				TargetAttributes = {
+					85C8462E1FB05826009801CF = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = ZSLWHUMH97;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					85C8463F1FB05826009801CF = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 85C8462E1FB05826009801CF;
+					};
+					85C8464A1FB05827009801CF = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 85C8462E1FB05826009801CF;
+					};
+				};
+			};
+			buildConfigurationList = 85C8462A1FB05826009801CF /* Build configuration list for PBXProject "WanderFloorPlan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85C846261FB05826009801CF;
+			productRefGroup = 85C846301FB05826009801CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85C8462E1FB05826009801CF /* WanderFloorPlan */,
+				85C8463F1FB05826009801CF /* WanderFloorPlanTests */,
+				85C8464A1FB05827009801CF /* WanderFloorPlanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85C8462D1FB05826009801CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C846371FB05826009801CF /* Assets.xcassets in Resources */,
+				854BDD911FCBB9D0007130C6 /* navigationImage.png in Resources */,
+				85C8463A1FB05826009801CF /* Main.storyboard in Resources */,
+				852916721FB2DEDA002C54A4 /* map@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8463E1FB05826009801CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C846491FB05827009801CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		147E6CCD54C3BD33FC545AC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderFloorPlanUITests/Pods-WanderFloorPlanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50EAAE1299E093AD24E440C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderFloorPlanTests/Pods-WanderFloorPlanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D46F2481DA3204202AF97CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderFloorPlan/Pods-WanderFloorPlan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D806E7022C51D493274A80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WanderFloorPlanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7339BE354920B2A84CF8F6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WanderFloorPlanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA74795479D83C0C4F42610 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderFloorPlanUITests/Pods-WanderFloorPlanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF23FCAE05FA8C4A8584BFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WanderFloorPlan/Pods-WanderFloorPlan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
+				"${BUILT_PRODUCTS_DIR}/GDataXML-HTML/GDataXML_HTML.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GDataXML_HTML.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderFloorPlan/Pods-WanderFloorPlan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA8FFDF6100A618ABEF1A0BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WanderFloorPlan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC2B7A2CA1936AC14AAD7339 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanderFloorPlanTests/Pods-WanderFloorPlanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85C8462B1FB05826009801CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8583C8901FC559B400AA64D7 /* MouseEventImageView.swift in Sources */,
+				85C846351FB05826009801CF /* ViewController.swift in Sources */,
+				85C846331FB05826009801CF /* AppDelegate.swift in Sources */,
+				854BDD931FCBEBA5007130C6 /* MathematicalFormula.swift in Sources */,
+				858821351FCD3E3A00014A44 /* XMLParserTool.swift in Sources */,
+				8566E34A1FC7EE2D00ACB37F /* IMInstance.swift in Sources */,
+				858B24251FD66AB00063F826 /* ModuleFileManger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8463C1FB05826009801CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C846451FB05827009801CF /* WanderFloorPlanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C846471FB05827009801CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C846501FB05827009801CF /* WanderFloorPlanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85C846421FB05827009801CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C8462E1FB05826009801CF /* WanderFloorPlan */;
+			targetProxy = 85C846411FB05827009801CF /* PBXContainerItemProxy */;
+		};
+		85C8464D1FB05827009801CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C8462E1FB05826009801CF /* WanderFloorPlan */;
+			targetProxy = 85C8464C1FB05827009801CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85C846381FB05826009801CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C846391FB05826009801CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85C846521FB05827009801CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85C846531FB05827009801CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		85C846551FB05827009801CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1A3A7CE91B422D65F635EDF /* Pods-WanderFloorPlan.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WanderFloorPlan/WanderFloorPlan.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZSLWHUMH97;
+				INFOPLIST_FILE = WanderFloorPlan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ideamake.WanderFloorPlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WanderFloorPlan-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Debug;
+		};
+		85C846561FB05827009801CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F970B96A8DFEAE99276B2B97 /* Pods-WanderFloorPlan.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WanderFloorPlan/WanderFloorPlan.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZSLWHUMH97;
+				INFOPLIST_FILE = WanderFloorPlan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ideamake.WanderFloorPlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WanderFloorPlan-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Release;
+		};
+		85C846581FB05827009801CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006319CA994CD06845AF6C4F /* Pods-WanderFloorPlanTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanderFloorPlanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ideamake.WanderFloorPlanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanderFloorPlan.app/Contents/MacOS/WanderFloorPlan";
+			};
+			name = Debug;
+		};
+		85C846591FB05827009801CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B319CD1E73856001FDE58DFB /* Pods-WanderFloorPlanTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanderFloorPlanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ideamake.WanderFloorPlanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanderFloorPlan.app/Contents/MacOS/WanderFloorPlan";
+			};
+			name = Release;
+		};
+		85C8465B1FB05827009801CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BB88B064950D0D0316120C /* Pods-WanderFloorPlanUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanderFloorPlanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ideamake.WanderFloorPlanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WanderFloorPlan;
+			};
+			name = Debug;
+		};
+		85C8465C1FB05827009801CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C54483C4043AE4F306FFB92 /* Pods-WanderFloorPlanUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanderFloorPlanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ideamake.WanderFloorPlanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WanderFloorPlan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85C8462A1FB05826009801CF /* Build configuration list for PBXProject "WanderFloorPlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C846521FB05827009801CF /* Debug */,
+				85C846531FB05827009801CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C846541FB05827009801CF /* Build configuration list for PBXNativeTarget "WanderFloorPlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C846551FB05827009801CF /* Debug */,
+				85C846561FB05827009801CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C846571FB05827009801CF /* Build configuration list for PBXNativeTarget "WanderFloorPlanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C846581FB05827009801CF /* Debug */,
+				85C846591FB05827009801CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C8465A1FB05827009801CF /* Build configuration list for PBXNativeTarget "WanderFloorPlanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8465B1FB05827009801CF /* Debug */,
+				85C8465C1FB05827009801CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85C846271FB05826009801CF /* Project object */;
+}

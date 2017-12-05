@@ -1,0 +1,6 @@
+framework module Pods_WanderFloorPlan {
+  umbrella header "Pods-WanderFloorPlan-umbrella.h"
+
+  export *
+  module * { export * }
+}

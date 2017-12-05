@@ -1,0 +1,1163 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015A2D47B6DA8E170E4E64108EC177CA /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 84738DA809E82ED4EE9EA41B385ED021 /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03810806C0578A750613717248DC37CC /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4557B9C3901C269623F1B5F2BE331C12 /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0551162B7568A0F3028CF7CE13E9C1C7 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD297AA9984F0BE060485C994D7320B /* GCDWebServerURLEncodedFormRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		098AA417A5494FC829E777DC5CF06ECC /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BE9CAE00F4D487BC85B063E81F6163A1 /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B8140968914C908CFB4949F67745DD7 /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A03EFF2CBD38559EF58A8C829256691 /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B4B72ED9E64DA08DB9352B67877890 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F07CBE6988BD391FE7A0AE9BAA63882 /* Cocoa.framework */; };
+		1568BC317134F1902AB76EE65E0A18CE /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9E675055C0AF7A367213D8B065EDD5 /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18BC63E655DD12433DA6A8E7600D1409 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BABCB01C10323D37E39C9CBD4E4751 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1B4407940802F9BC3F92B7E1227623D5 /* GDataXML-HTML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86847F3F683308DD9FA76C1344A8E12A /* GDataXML-HTML-dummy.m */; };
+		1EF1D9B948C91F3CAD0F2998F3765D8B /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BCA206842E83FA3A0ECC4C3CFE445F9 /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2527F62CEADDA5CE60852E0C067D3438 /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AEEAAB8BA842674572C65ABD3AC05CD /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		286A79B0F2405FD08804042FE30407B1 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE89EF7D3FCF1B5E151308DAFB1CF3F /* GCDWebServerMultiPartFormRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2CF6DA43F4382C7C702BBE758AD8EB92 /* Pods-WanderFloorPlanUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA0C0D715A9B7722F6F74DE0AB9EA3 /* Pods-WanderFloorPlanUITests-dummy.m */; };
+		30E2A73CDE464DC6C23D3524F07FBB9F /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D983CC490228AEC0EFDEE5B6B5412E21 /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33669A1E8FF6BB34131FB94871DDF908 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F07CBE6988BD391FE7A0AE9BAA63882 /* Cocoa.framework */; };
+		35B3DA850A250223EE5CEB9DB04D1FC4 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F48B1A7A228F200264FF2A449820C /* GCDWebServerResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		36E0FA5FE4424D20F0215B1C2CD85D90 /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A76DB97A14AAAB37A11ADC76699C742 /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		382EEA9832CF0E0860B998EAD0EE66E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E50A971405B804294572CAAD1D1F90 /* SystemConfiguration.framework */; };
+		3E715DFE443524EB6ADE892E4A676224 /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2D62EF855A4DB31C626D0A684832F5 /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48FE45BD7BF4ABB32A024550ED96B4C6 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B5782176644D93EDB5D845FEC7BE1602 /* GCDWebServerStreamedResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4EDE49009B5B68074CD71F8B362F0DDC /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A1305B3298270E91CBD016D063BC081D /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50B85A726258F9484C4C2E3A13E39964 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E546AA5DF482036B539B8753CE46F2A /* GDataXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53D63A17DB43C044EFBAA17337600276 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E357215E13B1C2DE8F04D86A87BA241 /* GCDWebServerRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		66AD0D86950A5C05121AE482F5257717 /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5B02D1D2BF1F5191D9AA8F86770DF7 /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68EAF779E62954E87D2A6F6809C85D87 /* Pods-WanderFloorPlan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D882C825415B99298B833AF3608254 /* Pods-WanderFloorPlan-dummy.m */; };
+		6C62ACD1AF9B80626023D3E654D3E77B /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A6BE078CB9779EF2BD0E60E8BB9B35 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FBE753F4D4922E9A13C330273E23E8B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F07CBE6988BD391FE7A0AE9BAA63882 /* Cocoa.framework */; };
+		7B70A32CB535894B889DC0400D0DE4B5 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 935080C340FFAF5B8905C6A613B75894 /* GCDWebServerDataRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7BE46C6CBFC696E1B7762EFF5FA67746 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F07CBE6988BD391FE7A0AE9BAA63882 /* Cocoa.framework */; };
+		7C46C6DFBF9F5A96C6BCE1C93052B63D /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E70DEEE34EFEDA8AB061AED09C0501C /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		886E89D85907BBD7A8C8BAA088D23E3D /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E988EC92227847D4A402805C043FCA96 /* GCDWebServerFileResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B7EF65DA3A34ABF3B41F50ADCD198BDC /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE1BC65A1482E1B004EB8D8352A09C1C /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5EAECA1794A514A8589B873A2DCB60A /* Pods-WanderFloorPlan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC722FB9487B031DACB941362E213F7 /* Pods-WanderFloorPlan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C96E54153198E59FF0F8B9F7408523E0 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CB596F6107291175EE59341B5C9FEAC8 /* GCDWebServerDataResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CE8F7A2A91A636BB2EB24F57770A1C68 /* Pods-WanderFloorPlanTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DDB90F228E651C6B7844FAF3433E82 /* Pods-WanderFloorPlanTests-dummy.m */; };
+		D2B04C075D6CA6AF10C35D8BF7DEF0D3 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 19069B4F284F92D1329C34DED56E5319 /* GCDWebServerFileRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D63E514E26A060F7C90A92AE8E9B49F9 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 046E388C4A07D750E5BFA7F5648A26E3 /* GCDWebServer-dummy.m */; };
+		D7524216B4C0994A50624825DFB7CB6B /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939A325D30AC0926942BF937733B0A4 /* GCDWebServerConnection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E019A14EB58DF446CC7AD433E5B6BDBC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F07CBE6988BD391FE7A0AE9BAA63882 /* Cocoa.framework */; };
+		E62DD91C60246BD1E4E8A0AF5D7BF0E7 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D416664139AB0E31D8EB33B8FB3B0B8 /* GCDWebServerErrorResponse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EA6D2E46B967F447FFC46520EC328B5E /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D9E4FB21D9F6C6A327A8AA6B1236F8E /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F01B33AC5D83E760AD603A2E546A2C46 /* Pods-WanderFloorPlanUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCD1EB8B48C5E22F3E58A966BCEF5E3 /* Pods-WanderFloorPlanUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F359857602B1D4C91B4AC3D1A2CDFE1B /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 339B9E3A7F0B8FA99F25E1CEB5CFBE24 /* GCDWebServerFunctions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F897B658E50EEA23D316B4338284FB65 /* Pods-WanderFloorPlanTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 438DA92982A0DE037624DD19BAD81AE7 /* Pods-WanderFloorPlanTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBF219CBB84DD6F373B818708C889C9D /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 47DCE6C044F58F64F9B91ED91A4C1D2A /* GCDWebServer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D2ABA7D652A4BA0553CCDDEF3C5F053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B8B0ED1046111D92895FC95F12DBC10;
+			remoteInfo = GCDWebServer;
+		};
+		2CC8E7097379D344E94720F1E76E0930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D72BDF62692B8BEB8904D327380ACE1E;
+			remoteInfo = "GDataXML-HTML";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A6BE078CB9779EF2BD0E60E8BB9B35 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerStreamedResponse.h; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		046E388C4A07D750E5BFA7F5648A26E3 /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
+		0939A325D30AC0926942BF937733B0A4 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
+		0D6C9E39EFB53D8BD38F1B949BE9C74D /* Pods-WanderFloorPlan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WanderFloorPlan.modulemap"; sourceTree = "<group>"; };
+		19069B4F284F92D1329C34DED56E5319 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileRequest.m; path = GCDWebServer/Requests/GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		1A03EFF2CBD38559EF58A8C829256691 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileResponse.h; path = GCDWebServer/Responses/GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		1D416664139AB0E31D8EB33B8FB3B0B8 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		1EAFE519531BD67DF4D717F147A5CD15 /* GDataXML-HTML.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "GDataXML-HTML.modulemap"; sourceTree = "<group>"; };
+		21B7E15573ED0270BCD9B04D26841EA4 /* Pods-WanderFloorPlan-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WanderFloorPlan-acknowledgements.plist"; sourceTree = "<group>"; };
+		243422D742ADD1CF717F11DD7D9F5CBE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D049767B66B95482B7C15359DEC64E /* Pods-WanderFloorPlanTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WanderFloorPlanTests.modulemap"; sourceTree = "<group>"; };
+		2A76DB97A14AAAB37A11ADC76699C742 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerRequest.h; path = GCDWebServer/Core/GCDWebServerRequest.h; sourceTree = "<group>"; };
+		2AEEAAB8BA842674572C65ABD3AC05CD /* GCDWebServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerResponse.h; path = GCDWebServer/Core/GCDWebServerResponse.h; sourceTree = "<group>"; };
+		2E357215E13B1C2DE8F04D86A87BA241 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerRequest.m; path = GCDWebServer/Core/GCDWebServerRequest.m; sourceTree = "<group>"; };
+		2FCD1EB8B48C5E22F3E58A966BCEF5E3 /* Pods-WanderFloorPlanUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WanderFloorPlanUITests-umbrella.h"; sourceTree = "<group>"; };
+		307EB2F87178B6133B0AD2DFECCB6120 /* GDataXML_HTML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GDataXML_HTML.framework; path = "GDataXML-HTML.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		339B9E3A7F0B8FA99F25E1CEB5CFBE24 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFunctions.m; path = GCDWebServer/Core/GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		3404FE95630AD755847AFA0EC5BCA767 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE89EF7D3FCF1B5E151308DAFB1CF3F /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerMultiPartFormRequest.m; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		3E546AA5DF482036B539B8753CE46F2A /* GDataXMLNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = Pod/Classes/GDataXMLNode.h; sourceTree = "<group>"; };
+		3E5B02D1D2BF1F5191D9AA8F86770DF7 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerConnection.h; path = GCDWebServer/Core/GCDWebServerConnection.h; sourceTree = "<group>"; };
+		404FAB572F5F5559B7C9D840CB744864 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438DA92982A0DE037624DD19BAD81AE7 /* Pods-WanderFloorPlanTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WanderFloorPlanTests-umbrella.h"; sourceTree = "<group>"; };
+		4557B9C3901C269623F1B5F2BE331C12 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		45D882C825415B99298B833AF3608254 /* Pods-WanderFloorPlan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WanderFloorPlan-dummy.m"; sourceTree = "<group>"; };
+		476E28306E05DB5D9B313727B10EAAB4 /* Pods_WanderFloorPlanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WanderFloorPlanTests.framework; path = "Pods-WanderFloorPlanTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BABCB01C10323D37E39C9CBD4E4751 /* GDataXMLNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = Pod/Classes/GDataXMLNode.m; sourceTree = "<group>"; };
+		47DCE6C044F58F64F9B91ED91A4C1D2A /* GCDWebServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServer.m; path = GCDWebServer/Core/GCDWebServer.m; sourceTree = "<group>"; };
+		49E50A971405B804294572CAAD1D1F90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		4BCA206842E83FA3A0ECC4C3CFE445F9 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerErrorResponse.h; path = GCDWebServer/Responses/GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		54C6431592B17FDC1227214549C3E230 /* Pods-WanderFloorPlan-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WanderFloorPlan-resources.sh"; sourceTree = "<group>"; };
+		56B0BAAC71BECA01880E220020F079E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E13A29E47DED16EFFF10EB7F2E6B456 /* Pods-WanderFloorPlanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WanderFloorPlanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		614E72E3990FF928EB20355BDBAAF5C3 /* Pods-WanderFloorPlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WanderFloorPlan.debug.xcconfig"; sourceTree = "<group>"; };
+		628F48B1A7A228F200264FF2A449820C /* GCDWebServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerResponse.m; path = GCDWebServer/Core/GCDWebServerResponse.m; sourceTree = "<group>"; };
+		6508A9572AD6DA5CC7DA0A89C36CE64E /* Pods_WanderFloorPlanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WanderFloorPlanUITests.framework; path = "Pods-WanderFloorPlanUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65556661D948AAA36ADC6A293C553BA6 /* Pods-WanderFloorPlanUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WanderFloorPlanUITests-resources.sh"; sourceTree = "<group>"; };
+		6D194E621A111C8DBF2E3276A7929425 /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCDWebServer.framework; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E70DEEE34EFEDA8AB061AED09C0501C /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		709B10FDB4F62EB295E75B8940441045 /* Pods-WanderFloorPlanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WanderFloorPlanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		70DDB90F228E651C6B7844FAF3433E82 /* Pods-WanderFloorPlanTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WanderFloorPlanTests-dummy.m"; sourceTree = "<group>"; };
+		72B23B10A5D3D8FC75BBEA39A98FEA30 /* GCDWebServer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.xcconfig; sourceTree = "<group>"; };
+		84738DA809E82ED4EE9EA41B385ED021 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileRequest.h; path = GCDWebServer/Requests/GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		86847F3F683308DD9FA76C1344A8E12A /* GDataXML-HTML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GDataXML-HTML-dummy.m"; sourceTree = "<group>"; };
+		878D61C48E3DE2FF06EDA6D26134E2E2 /* Pods-WanderFloorPlan-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WanderFloorPlan-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8D9E4FB21D9F6C6A327A8AA6B1236F8E /* GCDWebServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = GCDWebServer/Core/GCDWebServer.h; sourceTree = "<group>"; };
+		905BFF053273A10EB9E2B34F007F4F3A /* GCDWebServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-prefix.pch"; sourceTree = "<group>"; };
+		91E251594BE8698DDF6C050A8D2A60E6 /* GDataXML-HTML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDataXML-HTML-prefix.pch"; sourceTree = "<group>"; };
+		935080C340FFAF5B8905C6A613B75894 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataRequest.m; path = GCDWebServer/Requests/GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98EA0C0D715A9B7722F6F74DE0AB9EA3 /* Pods-WanderFloorPlanUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WanderFloorPlanUITests-dummy.m"; sourceTree = "<group>"; };
+		9B74D3413DC1FA256B309754A6915B57 /* GCDWebServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GCDWebServer.modulemap; sourceTree = "<group>"; };
+		9CA4D261EC489991634CA39E06F65C8B /* Pods-WanderFloorPlanTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WanderFloorPlanTests-resources.sh"; sourceTree = "<group>"; };
+		9D4BCE09AEBE65AEED220A899B56A222 /* Pods-WanderFloorPlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WanderFloorPlan.release.xcconfig"; sourceTree = "<group>"; };
+		9F07CBE6988BD391FE7A0AE9BAA63882 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		9FC722FB9487B031DACB941362E213F7 /* Pods-WanderFloorPlan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WanderFloorPlan-umbrella.h"; sourceTree = "<group>"; };
+		A1305B3298270E91CBD016D063BC081D /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataRequest.h; path = GCDWebServer/Requests/GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		A43BBAA8B259CF9764B4F0840C194F75 /* Pods-WanderFloorPlanTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WanderFloorPlanTests-frameworks.sh"; sourceTree = "<group>"; };
+		A6E252E6E1E98DA6B961C5B8A4E4E56C /* Pods-WanderFloorPlan-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WanderFloorPlan-frameworks.sh"; sourceTree = "<group>"; };
+		A8D506C8D097D559907EE259BEF81DBA /* Pods_WanderFloorPlan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WanderFloorPlan.framework; path = "Pods-WanderFloorPlan.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA60D42AB796F2ECD47261D73C486C5D /* Pods-WanderFloorPlanUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WanderFloorPlanUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB9E675055C0AF7A367213D8B065EDD5 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataResponse.h; path = GCDWebServer/Responses/GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		B1D29069772D55756EEC75BC3970C2BD /* Pods-WanderFloorPlanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WanderFloorPlanTests.release.xcconfig"; sourceTree = "<group>"; };
+		B4A82EBDE7081FA13258B5916C4F168F /* Pods-WanderFloorPlanUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WanderFloorPlanUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B5782176644D93EDB5D845FEC7BE1602 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		BE9CAE00F4D487BC85B063E81F6163A1 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerURLEncodedFormRequest.h; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		C5257BFC805D4D9835BAF2AD4ADA5B33 /* Pods-WanderFloorPlanUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WanderFloorPlanUITests.modulemap"; sourceTree = "<group>"; };
+		CA45FE5452E21E8E56F30E1B2B2AD2AC /* Pods-WanderFloorPlanTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WanderFloorPlanTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB596F6107291175EE59341B5C9FEAC8 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataResponse.m; path = GCDWebServer/Responses/GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		D52589955FB3289A7D65867AA093965D /* GDataXML-HTML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GDataXML-HTML.xcconfig"; sourceTree = "<group>"; };
+		D983CC490228AEC0EFDEE5B6B5412E21 /* GCDWebServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-umbrella.h"; sourceTree = "<group>"; };
+		DD2D62EF855A4DB31C626D0A684832F5 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerMultiPartFormRequest.h; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		DDD297AA9984F0BE060485C994D7320B /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		E063802F81D13068CAA908E81A480BE4 /* Pods-WanderFloorPlanUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WanderFloorPlanUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E988EC92227847D4A402805C043FCA96 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		EE1BC65A1482E1B004EB8D8352A09C1C /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFunctions.h; path = GCDWebServer/Core/GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		F4D1C2FDA7894A7B3E54C4B1196BF3CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A3A957C005BD610CEF1F7BF83EF41E /* Pods-WanderFloorPlanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WanderFloorPlanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAE415DBAFADF5AC97D23DED3FFFB1AF /* Pods-WanderFloorPlanTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WanderFloorPlanTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1967D8B8860DD43DDF4282DCF12EF4C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B4B72ED9E64DA08DB9352B67877890 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		402619966F4DF3E6B6D4B4974E30F6EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E019A14EB58DF446CC7AD433E5B6BDBC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66EDD1194AC4E890AC1E5ECD29255DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FBE753F4D4922E9A13C330273E23E8B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E718F9F87ABFC0EC82CF710FAF92DC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33669A1E8FF6BB34131FB94871DDF908 /* Cocoa.framework in Frameworks */,
+				382EEA9832CF0E0860B998EAD0EE66E1 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89C10E077B86644285E7FAB7E9FA603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE46C6CBFC696E1B7762EFF5FA67746 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230F943466532E55499997320AF2B78C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40E8724A5FF7AD7DF7714989CDAF86E7 /* GCDWebServer */,
+				E76DEF70A3598785378B8DFB945C1CF2 /* GDataXML-HTML */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2429E5B54B2BBDA5F204D35A86F5994E /* Pods-WanderFloorPlanTests */ = {
+			isa = PBXGroup;
+			children = (
+				243422D742ADD1CF717F11DD7D9F5CBE /* Info.plist */,
+				26D049767B66B95482B7C15359DEC64E /* Pods-WanderFloorPlanTests.modulemap */,
+				CA45FE5452E21E8E56F30E1B2B2AD2AC /* Pods-WanderFloorPlanTests-acknowledgements.markdown */,
+				FAE415DBAFADF5AC97D23DED3FFFB1AF /* Pods-WanderFloorPlanTests-acknowledgements.plist */,
+				70DDB90F228E651C6B7844FAF3433E82 /* Pods-WanderFloorPlanTests-dummy.m */,
+				A43BBAA8B259CF9764B4F0840C194F75 /* Pods-WanderFloorPlanTests-frameworks.sh */,
+				9CA4D261EC489991634CA39E06F65C8B /* Pods-WanderFloorPlanTests-resources.sh */,
+				438DA92982A0DE037624DD19BAD81AE7 /* Pods-WanderFloorPlanTests-umbrella.h */,
+				F9A3A957C005BD610CEF1F7BF83EF41E /* Pods-WanderFloorPlanTests.debug.xcconfig */,
+				B1D29069772D55756EEC75BC3970C2BD /* Pods-WanderFloorPlanTests.release.xcconfig */,
+			);
+			name = "Pods-WanderFloorPlanTests";
+			path = "Target Support Files/Pods-WanderFloorPlanTests";
+			sourceTree = "<group>";
+		};
+		316212A4B88222320E3D2395FBD2E084 /* Pods-WanderFloorPlan */ = {
+			isa = PBXGroup;
+			children = (
+				56B0BAAC71BECA01880E220020F079E3 /* Info.plist */,
+				0D6C9E39EFB53D8BD38F1B949BE9C74D /* Pods-WanderFloorPlan.modulemap */,
+				878D61C48E3DE2FF06EDA6D26134E2E2 /* Pods-WanderFloorPlan-acknowledgements.markdown */,
+				21B7E15573ED0270BCD9B04D26841EA4 /* Pods-WanderFloorPlan-acknowledgements.plist */,
+				45D882C825415B99298B833AF3608254 /* Pods-WanderFloorPlan-dummy.m */,
+				A6E252E6E1E98DA6B961C5B8A4E4E56C /* Pods-WanderFloorPlan-frameworks.sh */,
+				54C6431592B17FDC1227214549C3E230 /* Pods-WanderFloorPlan-resources.sh */,
+				9FC722FB9487B031DACB941362E213F7 /* Pods-WanderFloorPlan-umbrella.h */,
+				614E72E3990FF928EB20355BDBAAF5C3 /* Pods-WanderFloorPlan.debug.xcconfig */,
+				9D4BCE09AEBE65AEED220A899B56A222 /* Pods-WanderFloorPlan.release.xcconfig */,
+			);
+			name = "Pods-WanderFloorPlan";
+			path = "Target Support Files/Pods-WanderFloorPlan";
+			sourceTree = "<group>";
+		};
+		3485ADB92F129FDB52CC3C274F742066 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				316212A4B88222320E3D2395FBD2E084 /* Pods-WanderFloorPlan */,
+				2429E5B54B2BBDA5F204D35A86F5994E /* Pods-WanderFloorPlanTests */,
+				C32C131D822150638B930A610EE773BB /* Pods-WanderFloorPlanUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		40E8724A5FF7AD7DF7714989CDAF86E7 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				F960F67C96BD81B57A3543484EB46BFD /* Core */,
+				8C321A70E16CB62E54ADD9C320DADC7E /* Support Files */,
+			);
+			name = GCDWebServer;
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		648D916E57015940B3943E2D877A7EFA /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				9F07CBE6988BD391FE7A0AE9BAA63882 /* Cocoa.framework */,
+				49E50A971405B804294572CAAD1D1F90 /* SystemConfiguration.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
+				230F943466532E55499997320AF2B78C /* Pods */,
+				E88B3DF0C1BDA28EFF14B838E61B2B6E /* Products */,
+				3485ADB92F129FDB52CC3C274F742066 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8C321A70E16CB62E54ADD9C320DADC7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B74D3413DC1FA256B309754A6915B57 /* GCDWebServer.modulemap */,
+				72B23B10A5D3D8FC75BBEA39A98FEA30 /* GCDWebServer.xcconfig */,
+				046E388C4A07D750E5BFA7F5648A26E3 /* GCDWebServer-dummy.m */,
+				905BFF053273A10EB9E2B34F007F4F3A /* GCDWebServer-prefix.pch */,
+				D983CC490228AEC0EFDEE5B6B5412E21 /* GCDWebServer-umbrella.h */,
+				3404FE95630AD755847AFA0EC5BCA767 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GCDWebServer";
+			sourceTree = "<group>";
+		};
+		B27C305E242FEBC87D0E09AD0921CF6F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EAFE519531BD67DF4D717F147A5CD15 /* GDataXML-HTML.modulemap */,
+				D52589955FB3289A7D65867AA093965D /* GDataXML-HTML.xcconfig */,
+				86847F3F683308DD9FA76C1344A8E12A /* GDataXML-HTML-dummy.m */,
+				91E251594BE8698DDF6C050A8D2A60E6 /* GDataXML-HTML-prefix.pch */,
+				404FAB572F5F5559B7C9D840CB744864 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GDataXML-HTML";
+			sourceTree = "<group>";
+		};
+		C32C131D822150638B930A610EE773BB /* Pods-WanderFloorPlanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4D1C2FDA7894A7B3E54C4B1196BF3CE /* Info.plist */,
+				C5257BFC805D4D9835BAF2AD4ADA5B33 /* Pods-WanderFloorPlanUITests.modulemap */,
+				AA60D42AB796F2ECD47261D73C486C5D /* Pods-WanderFloorPlanUITests-acknowledgements.markdown */,
+				E063802F81D13068CAA908E81A480BE4 /* Pods-WanderFloorPlanUITests-acknowledgements.plist */,
+				98EA0C0D715A9B7722F6F74DE0AB9EA3 /* Pods-WanderFloorPlanUITests-dummy.m */,
+				B4A82EBDE7081FA13258B5916C4F168F /* Pods-WanderFloorPlanUITests-frameworks.sh */,
+				65556661D948AAA36ADC6A293C553BA6 /* Pods-WanderFloorPlanUITests-resources.sh */,
+				2FCD1EB8B48C5E22F3E58A966BCEF5E3 /* Pods-WanderFloorPlanUITests-umbrella.h */,
+				709B10FDB4F62EB295E75B8940441045 /* Pods-WanderFloorPlanUITests.debug.xcconfig */,
+				5E13A29E47DED16EFFF10EB7F2E6B456 /* Pods-WanderFloorPlanUITests.release.xcconfig */,
+			);
+			name = "Pods-WanderFloorPlanUITests";
+			path = "Target Support Files/Pods-WanderFloorPlanUITests";
+			sourceTree = "<group>";
+		};
+		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				648D916E57015940B3943E2D877A7EFA /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E76DEF70A3598785378B8DFB945C1CF2 /* GDataXML-HTML */ = {
+			isa = PBXGroup;
+			children = (
+				3E546AA5DF482036B539B8753CE46F2A /* GDataXMLNode.h */,
+				47BABCB01C10323D37E39C9CBD4E4751 /* GDataXMLNode.m */,
+				B27C305E242FEBC87D0E09AD0921CF6F /* Support Files */,
+			);
+			name = "GDataXML-HTML";
+			path = "GDataXML-HTML";
+			sourceTree = "<group>";
+		};
+		E88B3DF0C1BDA28EFF14B838E61B2B6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D194E621A111C8DBF2E3276A7929425 /* GCDWebServer.framework */,
+				307EB2F87178B6133B0AD2DFECCB6120 /* GDataXML_HTML.framework */,
+				A8D506C8D097D559907EE259BEF81DBA /* Pods_WanderFloorPlan.framework */,
+				476E28306E05DB5D9B313727B10EAAB4 /* Pods_WanderFloorPlanTests.framework */,
+				6508A9572AD6DA5CC7DA0A89C36CE64E /* Pods_WanderFloorPlanUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F960F67C96BD81B57A3543484EB46BFD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8D9E4FB21D9F6C6A327A8AA6B1236F8E /* GCDWebServer.h */,
+				47DCE6C044F58F64F9B91ED91A4C1D2A /* GCDWebServer.m */,
+				3E5B02D1D2BF1F5191D9AA8F86770DF7 /* GCDWebServerConnection.h */,
+				0939A325D30AC0926942BF937733B0A4 /* GCDWebServerConnection.m */,
+				A1305B3298270E91CBD016D063BC081D /* GCDWebServerDataRequest.h */,
+				935080C340FFAF5B8905C6A613B75894 /* GCDWebServerDataRequest.m */,
+				AB9E675055C0AF7A367213D8B065EDD5 /* GCDWebServerDataResponse.h */,
+				CB596F6107291175EE59341B5C9FEAC8 /* GCDWebServerDataResponse.m */,
+				4BCA206842E83FA3A0ECC4C3CFE445F9 /* GCDWebServerErrorResponse.h */,
+				1D416664139AB0E31D8EB33B8FB3B0B8 /* GCDWebServerErrorResponse.m */,
+				84738DA809E82ED4EE9EA41B385ED021 /* GCDWebServerFileRequest.h */,
+				19069B4F284F92D1329C34DED56E5319 /* GCDWebServerFileRequest.m */,
+				1A03EFF2CBD38559EF58A8C829256691 /* GCDWebServerFileResponse.h */,
+				E988EC92227847D4A402805C043FCA96 /* GCDWebServerFileResponse.m */,
+				EE1BC65A1482E1B004EB8D8352A09C1C /* GCDWebServerFunctions.h */,
+				339B9E3A7F0B8FA99F25E1CEB5CFBE24 /* GCDWebServerFunctions.m */,
+				6E70DEEE34EFEDA8AB061AED09C0501C /* GCDWebServerHTTPStatusCodes.h */,
+				DD2D62EF855A4DB31C626D0A684832F5 /* GCDWebServerMultiPartFormRequest.h */,
+				3CE89EF7D3FCF1B5E151308DAFB1CF3F /* GCDWebServerMultiPartFormRequest.m */,
+				4557B9C3901C269623F1B5F2BE331C12 /* GCDWebServerPrivate.h */,
+				2A76DB97A14AAAB37A11ADC76699C742 /* GCDWebServerRequest.h */,
+				2E357215E13B1C2DE8F04D86A87BA241 /* GCDWebServerRequest.m */,
+				2AEEAAB8BA842674572C65ABD3AC05CD /* GCDWebServerResponse.h */,
+				628F48B1A7A228F200264FF2A449820C /* GCDWebServerResponse.m */,
+				00A6BE078CB9779EF2BD0E60E8BB9B35 /* GCDWebServerStreamedResponse.h */,
+				B5782176644D93EDB5D845FEC7BE1602 /* GCDWebServerStreamedResponse.m */,
+				BE9CAE00F4D487BC85B063E81F6163A1 /* GCDWebServerURLEncodedFormRequest.h */,
+				DDD297AA9984F0BE060485C994D7320B /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4061CCFCF8630F28D2E0043F85E85464 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F897B658E50EEA23D316B4338284FB65 /* Pods-WanderFloorPlanTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43BAC645C731BE6A89BE59542B0C35C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50B85A726258F9484C4C2E3A13E39964 /* GDataXMLNode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56954C70C5C9FB37FE780834BDEF630D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01B33AC5D83E760AD603A2E546A2C46 /* Pods-WanderFloorPlanUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B9981C9382CA48E42CADD9274429C8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E2A73CDE464DC6C23D3524F07FBB9F /* GCDWebServer-umbrella.h in Headers */,
+				EA6D2E46B967F447FFC46520EC328B5E /* GCDWebServer.h in Headers */,
+				66AD0D86950A5C05121AE482F5257717 /* GCDWebServerConnection.h in Headers */,
+				4EDE49009B5B68074CD71F8B362F0DDC /* GCDWebServerDataRequest.h in Headers */,
+				1568BC317134F1902AB76EE65E0A18CE /* GCDWebServerDataResponse.h in Headers */,
+				1EF1D9B948C91F3CAD0F2998F3765D8B /* GCDWebServerErrorResponse.h in Headers */,
+				015A2D47B6DA8E170E4E64108EC177CA /* GCDWebServerFileRequest.h in Headers */,
+				0B8140968914C908CFB4949F67745DD7 /* GCDWebServerFileResponse.h in Headers */,
+				B7EF65DA3A34ABF3B41F50ADCD198BDC /* GCDWebServerFunctions.h in Headers */,
+				7C46C6DFBF9F5A96C6BCE1C93052B63D /* GCDWebServerHTTPStatusCodes.h in Headers */,
+				3E715DFE443524EB6ADE892E4A676224 /* GCDWebServerMultiPartFormRequest.h in Headers */,
+				03810806C0578A750613717248DC37CC /* GCDWebServerPrivate.h in Headers */,
+				36E0FA5FE4424D20F0215B1C2CD85D90 /* GCDWebServerRequest.h in Headers */,
+				2527F62CEADDA5CE60852E0C067D3438 /* GCDWebServerResponse.h in Headers */,
+				6C62ACD1AF9B80626023D3E654D3E77B /* GCDWebServerStreamedResponse.h in Headers */,
+				098AA417A5494FC829E777DC5CF06ECC /* GCDWebServerURLEncodedFormRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DB0034E1A0BA8953BF6A38CA8BC719 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EAECA1794A514A8589B873A2DCB60A /* Pods-WanderFloorPlan-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26BD8F8097DEFFDEB40E1B7571FF7AAE /* Pods-WanderFloorPlanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9943B9BD7B0C24BB69BCBE3B819066B9 /* Build configuration list for PBXNativeTarget "Pods-WanderFloorPlanUITests" */;
+			buildPhases = (
+				83734377A22BFD7223DD5958E2B13163 /* Sources */,
+				D89C10E077B86644285E7FAB7E9FA603 /* Frameworks */,
+				56954C70C5C9FB37FE780834BDEF630D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WanderFloorPlanUITests";
+			productName = "Pods-WanderFloorPlanUITests";
+			productReference = 6508A9572AD6DA5CC7DA0A89C36CE64E /* Pods_WanderFloorPlanUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B8B0ED1046111D92895FC95F12DBC10 /* GCDWebServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010811070A86F912EA0CD2BB98136CD9 /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
+			buildPhases = (
+				81F40976E91E102E115D6BE30CCC18E9 /* Sources */,
+				7E718F9F87ABFC0EC82CF710FAF92DC4 /* Frameworks */,
+				6B9981C9382CA48E42CADD9274429C8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDWebServer;
+			productName = GCDWebServer;
+			productReference = 6D194E621A111C8DBF2E3276A7929425 /* GCDWebServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1BCE59032E2A259035AC3752195483F /* Pods-WanderFloorPlan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A627DF21383B8191AF7EDFB7D3E9F7C /* Build configuration list for PBXNativeTarget "Pods-WanderFloorPlan" */;
+			buildPhases = (
+				A5EB7EAAE1218F7D6DDDF91ADC7140E7 /* Sources */,
+				402619966F4DF3E6B6D4B4974E30F6EB /* Frameworks */,
+				E3DB0034E1A0BA8953BF6A38CA8BC719 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				645930D3823686F3D78F7D134310E0BA /* PBXTargetDependency */,
+				D293F5C9F98622A9E4091009593C67B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-WanderFloorPlan";
+			productName = "Pods-WanderFloorPlan";
+			productReference = A8D506C8D097D559907EE259BEF81DBA /* Pods_WanderFloorPlan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D72BDF62692B8BEB8904D327380ACE1E /* GDataXML-HTML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8304945F1ABE338B67A4A5EC0C64D53 /* Build configuration list for PBXNativeTarget "GDataXML-HTML" */;
+			buildPhases = (
+				A4B1F82DBDCEE369C9E6E6BE1F6DA7B5 /* Sources */,
+				1967D8B8860DD43DDF4282DCF12EF4C5 /* Frameworks */,
+				43BAC645C731BE6A89BE59542B0C35C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GDataXML-HTML";
+			productName = "GDataXML-HTML";
+			productReference = 307EB2F87178B6133B0AD2DFECCB6120 /* GDataXML_HTML.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F072A69414208F7F8A2D97654F43A2B1 /* Pods-WanderFloorPlanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4121EE6BC135CBC0F0AB51FEDDC3FD3D /* Build configuration list for PBXNativeTarget "Pods-WanderFloorPlanTests" */;
+			buildPhases = (
+				6FECE0477552477E460AF9ED41BE5DD6 /* Sources */,
+				66EDD1194AC4E890AC1E5ECD29255DE7 /* Frameworks */,
+				4061CCFCF8630F28D2E0043F85E85464 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WanderFloorPlanTests";
+			productName = "Pods-WanderFloorPlanTests";
+			productReference = 476E28306E05DB5D9B313727B10EAAB4 /* Pods_WanderFloorPlanTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E88B3DF0C1BDA28EFF14B838E61B2B6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B8B0ED1046111D92895FC95F12DBC10 /* GCDWebServer */,
+				D72BDF62692B8BEB8904D327380ACE1E /* GDataXML-HTML */,
+				A1BCE59032E2A259035AC3752195483F /* Pods-WanderFloorPlan */,
+				F072A69414208F7F8A2D97654F43A2B1 /* Pods-WanderFloorPlanTests */,
+				26BD8F8097DEFFDEB40E1B7571FF7AAE /* Pods-WanderFloorPlanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FECE0477552477E460AF9ED41BE5DD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8F7A2A91A636BB2EB24F57770A1C68 /* Pods-WanderFloorPlanTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81F40976E91E102E115D6BE30CCC18E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D63E514E26A060F7C90A92AE8E9B49F9 /* GCDWebServer-dummy.m in Sources */,
+				FBF219CBB84DD6F373B818708C889C9D /* GCDWebServer.m in Sources */,
+				D7524216B4C0994A50624825DFB7CB6B /* GCDWebServerConnection.m in Sources */,
+				7B70A32CB535894B889DC0400D0DE4B5 /* GCDWebServerDataRequest.m in Sources */,
+				C96E54153198E59FF0F8B9F7408523E0 /* GCDWebServerDataResponse.m in Sources */,
+				E62DD91C60246BD1E4E8A0AF5D7BF0E7 /* GCDWebServerErrorResponse.m in Sources */,
+				D2B04C075D6CA6AF10C35D8BF7DEF0D3 /* GCDWebServerFileRequest.m in Sources */,
+				886E89D85907BBD7A8C8BAA088D23E3D /* GCDWebServerFileResponse.m in Sources */,
+				F359857602B1D4C91B4AC3D1A2CDFE1B /* GCDWebServerFunctions.m in Sources */,
+				286A79B0F2405FD08804042FE30407B1 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				53D63A17DB43C044EFBAA17337600276 /* GCDWebServerRequest.m in Sources */,
+				35B3DA850A250223EE5CEB9DB04D1FC4 /* GCDWebServerResponse.m in Sources */,
+				48FE45BD7BF4ABB32A024550ED96B4C6 /* GCDWebServerStreamedResponse.m in Sources */,
+				0551162B7568A0F3028CF7CE13E9C1C7 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83734377A22BFD7223DD5958E2B13163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF6DA43F4382C7C702BBE758AD8EB92 /* Pods-WanderFloorPlanUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B1F82DBDCEE369C9E6E6BE1F6DA7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B4407940802F9BC3F92B7E1227623D5 /* GDataXML-HTML-dummy.m in Sources */,
+				18BC63E655DD12433DA6A8E7600D1409 /* GDataXMLNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EB7EAAE1218F7D6DDDF91ADC7140E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68EAF779E62954E87D2A6F6809C85D87 /* Pods-WanderFloorPlan-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		645930D3823686F3D78F7D134310E0BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = 5B8B0ED1046111D92895FC95F12DBC10 /* GCDWebServer */;
+			targetProxy = 0D2ABA7D652A4BA0553CCDDEF3C5F053 /* PBXContainerItemProxy */;
+		};
+		D293F5C9F98622A9E4091009593C67B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GDataXML-HTML";
+			target = D72BDF62692B8BEB8904D327380ACE1E /* GDataXML-HTML */;
+			targetProxy = 2CC8E7097379D344E94720F1E76E0930 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		58205A26EAF591E9FA5E53B1323EE569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52589955FB3289A7D65867AA093965D /* GDataXML-HTML.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GDataXML-HTML/GDataXML-HTML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GDataXML-HTML/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/GDataXML-HTML/GDataXML-HTML.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GDataXML_HTML;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		614EFEAE5A43407F3B11BA61A9F4D8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B23B10A5D3D8FC75BBEA39A98FEA30 /* GCDWebServer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A1794700294A0B82B65E9A320C86146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D29069772D55756EEC75BC3970C2BD /* Pods-WanderFloorPlanTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WanderFloorPlanTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-WanderFloorPlanTests/Pods-WanderFloorPlanTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WanderFloorPlanTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C12EA263BE02EBF442B4744CC832C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 709B10FDB4F62EB295E75B8940441045 /* Pods-WanderFloorPlanUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WanderFloorPlanUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-WanderFloorPlanUITests/Pods-WanderFloorPlanUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WanderFloorPlanUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A25E753CAB0D6CD2A05481A49FE6DB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B23B10A5D3D8FC75BBEA39A98FEA30 /* GCDWebServer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8A338F3FBD471211266527E6DEE2853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52589955FB3289A7D65867AA093965D /* GDataXML-HTML.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GDataXML-HTML/GDataXML-HTML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GDataXML-HTML/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/GDataXML-HTML/GDataXML-HTML.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GDataXML_HTML;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC47C47E310F8D2A82478492F4D55880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D4BCE09AEBE65AEED220A899B56A222 /* Pods-WanderFloorPlan.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WanderFloorPlan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-WanderFloorPlan/Pods-WanderFloorPlan.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WanderFloorPlan;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B692FD7EA15439EA2BB9B746A83C2748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A3A957C005BD610CEF1F7BF83EF41E /* Pods-WanderFloorPlanTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WanderFloorPlanTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-WanderFloorPlanTests/Pods-WanderFloorPlanTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WanderFloorPlanTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C734A39EF0A2FD4BDDD7FE07639BA9C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F7072C0F12367F3C7F6297FD59C3B8B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614E72E3990FF928EB20355BDBAAF5C3 /* Pods-WanderFloorPlan.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WanderFloorPlan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-WanderFloorPlan/Pods-WanderFloorPlan.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WanderFloorPlan;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8940EBD261D37B62D825A7A9BA6C932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E13A29E47DED16EFFF10EB7F2E6B456 /* Pods-WanderFloorPlanUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WanderFloorPlanUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-WanderFloorPlanUITests/Pods-WanderFloorPlanUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WanderFloorPlanUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC4738C3605827B2CD972C349A860865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		010811070A86F912EA0CD2BB98136CD9 /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614EFEAE5A43407F3B11BA61A9F4D8C0 /* Debug */,
+				A25E753CAB0D6CD2A05481A49FE6DB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C734A39EF0A2FD4BDDD7FE07639BA9C0 /* Debug */,
+				FC4738C3605827B2CD972C349A860865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4121EE6BC135CBC0F0AB51FEDDC3FD3D /* Build configuration list for PBXNativeTarget "Pods-WanderFloorPlanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B692FD7EA15439EA2BB9B746A83C2748 /* Debug */,
+				6A1794700294A0B82B65E9A320C86146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A627DF21383B8191AF7EDFB7D3E9F7C /* Build configuration list for PBXNativeTarget "Pods-WanderFloorPlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7072C0F12367F3C7F6297FD59C3B8B4 /* Debug */,
+				AC47C47E310F8D2A82478492F4D55880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9943B9BD7B0C24BB69BCBE3B819066B9 /* Build configuration list for PBXNativeTarget "Pods-WanderFloorPlanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C12EA263BE02EBF442B4744CC832C5E /* Debug */,
+				F8940EBD261D37B62D825A7A9BA6C932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8304945F1ABE338B67A4A5EC0C64D53 /* Build configuration list for PBXNativeTarget "GDataXML-HTML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A338F3FBD471211266527E6DEE2853 /* Debug */,
+				58205A26EAF591E9FA5E53B1323EE569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
