@@ -93,7 +93,9 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         
         self.webServer.addGETHandler(forBasePath: "/", directoryPath: serverPath, indexFilename: nil, cacheAge: 3600, allowRangeRequests: true)
         
-        self.webServer.start(withPort:8080, bonjourName:"GCD Web Server")
+        let port = arc4random()%60000 + 1024
+        
+        self.webServer.start(withPort:UInt(port), bonjourName:"GCD Web Server")
         
         guard let serverString = webServer.serverURL else { return
             
