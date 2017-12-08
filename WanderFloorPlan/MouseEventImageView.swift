@@ -10,11 +10,16 @@ import Cocoa
 
 class MouseEventImageView: NSImageView {
     
+    enum IMGType {
+        case Floor //户型图类视图
+        case Nagivate //导航类视图
+    }
+    
+    var type = IMGType.Nagivate //视图类型，默认为导航类视图
+    
     var mousePoint = NSPoint.init() //视图内鼠标坐标
     
     var center = NSPoint.init() //视图坐标点
-
-    var imageViewIdentify = String()
     
     var imageViewName = String()
     
@@ -28,6 +33,7 @@ class MouseEventImageView: NSImageView {
         let trackingArea = NSTrackingArea.init(rect:dirtyRect, options: [.activeInActiveApp,.mouseMoved,.mouseEnteredAndExited], owner: self, userInfo: nil)
         
         self.addTrackingArea(trackingArea)
+        
     }
     
     override func mouseMoved(with event: NSEvent) {
@@ -38,32 +44,33 @@ class MouseEventImageView: NSImageView {
         
     }
     
-
-//    override func mouseExited(with event: NSEvent) {
-//        
-//        Swift.print("mouseExited")
-//    }
-//    
-    override func mouseEntered(with event: NSEvent) {
+    
+    
+    override func mouseDown(with event: NSEvent) {
         
+        self.mousePoint = self.convert(event.locationInWindow, from: self.window?.contentView)
+    }
+    
+    override func mouseUp(with event: NSEvent) {
         
-        
+        self.rotation = (MathematicalFormula().getAngle(oppositeSide: (self.mousePoint.y - 150), adjacentSide: (self.mousePoint.x - 150)) / .pi) * -180
         
     }
     
     override func mouseDragged(with event: NSEvent) {
         
-        if self.imageViewIdentify == "floorImageView" {
+        if self.type == .Floor {
             
             return
         }
+        
+        self.wantsLayer = true
         
         let dynamicPoint = self.convert(event.locationInWindow, from: self.window?.contentView)
         
         let radius1 = MathematicalFormula().getAngle(oppositeSide: (dynamicPoint.y - 150), adjacentSide: (dynamicPoint.x - 150))
         
         let radius2 = MathematicalFormula().getAngle(oppositeSide: (self.mousePoint.y - 150), adjacentSide: (self.mousePoint.x - 150))
-        
         
         let animation = CABasicAnimation.init(keyPath: "transform")
         
@@ -75,25 +82,11 @@ class MouseEventImageView: NSImageView {
         
         animation.toValue = NSValue(caTransform3D: CATransform3DRotate(CATransform3DIdentity, radius2, 0, 0, 1))
         
-        self.wantsLayer = true
-        
         self.layer?.add(animation, forKey: "")
         
         self.setNeedsDisplay()
         
         self.mousePoint = dynamicPoint
     }
-//
-    override func mouseDown(with event: NSEvent) {
-        
-        self.mousePoint = self.convert(event.locationInWindow, from: self.window?.contentView)
-    }
-//
-    override func mouseUp(with event: NSEvent) {
-        
-        self.rotation = (MathematicalFormula().getAngle(oppositeSide: (self.mousePoint.y - 150), adjacentSide: (self.mousePoint.x - 150)) / .pi) * 180
-        
-    }
-
     
 }

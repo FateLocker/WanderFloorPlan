@@ -22,8 +22,12 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
     @IBOutlet weak var floorPlanImgView: MouseEventImageView!
     
     @IBOutlet weak var rightCustomView: NSView!
+    
     @IBOutlet weak var spaceName: NSTextField!
     
+    @IBOutlet weak var backView: NSView!
+    
+    @IBOutlet weak var sizeTextField: NSTextField!
     var webView = WKWebView()
     
     
@@ -40,19 +44,15 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
 
         // Do any additional setup after loading the view.
         
+        self.initFloorPlanImageView()
+        
+        self.initWebView()
+    }
+    
+    //初始化网页视图
+    private func initWebView(){
+        
         self.serverAddress.isEditable = false
-        
-        self.floorPlanImgView.isEnabled = true
-        
-        let imageMenu = NSMenu()
-        
-        self.floorPlanImgView.menu = imageMenu
-        
-        self.floorPlanImgView.imageViewIdentify = "floorImageView"
-        
-        imageMenu.delegate = self
-        
-        self.webView.navigationDelegate = self
         
         self.webView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -64,6 +64,7 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         
         self.customView.addSubview(self.webView)
         
+        //添加网页视图的约束
         let top:NSLayoutConstraint = NSLayoutConstraint.init(item: self.webView, attribute: .top, relatedBy: .equal, toItem: self.customView, attribute: .top, multiplier: 1.0, constant: 0)
         let left:NSLayoutConstraint = NSLayoutConstraint.init(item: self.webView, attribute: .left, relatedBy: .equal, toItem: self.customView, attribute: .left, multiplier: 1.0, constant: 0)
         let bottom:NSLayoutConstraint = NSLayoutConstraint.init(item: self.webView, attribute: .bottom, relatedBy: .equal, toItem: self.customView, attribute: .bottom, multiplier: 1.0, constant: 0)
@@ -72,23 +73,69 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         self.webView.superview?.addConstraint(left)
         self.webView.superview?.addConstraint(bottom)
         self.webView.superview?.addConstraint(right)
-    }
-    override func mouseMoved(with event: NSEvent) {
-        
-        
-    }
-    
-    override func rightMouseUp(with event: NSEvent) {
-        
-        print(IMInstance.getSharedInstance().mousePoint)
-        
-    }
-    
-    private func addAnPointToImageVIew(pointLocation location:NSPoint,floorPlanImageView floorView:NSImageView){
     
     
     }
     
+    //初始化户型图视图
+    private func initFloorPlanImageView(){
+        
+        
+        self.sizeTextField.isEnabled = false
+        
+        self.backView.wantsLayer = true
+        
+        self.backView.layer?.borderWidth = 2
+        
+        self.backView.layer?.borderColor = NSColor.white.cgColor
+        
+        self.backView.layer?.cornerRadius = 5
+        
+        self.backView.layer?.setNeedsLayout()
+        
+        self.floorPlanImgView.type = .Floor
+        
+        self.floorPlanImgView.isEnabled = true
+        
+        let imageMenu = NSMenu()
+        
+        self.floorPlanImgView.menu = imageMenu
+        
+        imageMenu.delegate = self
+    
+    }
+    
+    @IBAction func selectFile(_ sender: NSButton) {
+        
+        self.openPanel(path: nil)
+    }
+    
+    private func openPanel(path:String?){
+    
+        let panel = NSOpenPanel.init()
+        
+        panel.canChooseDirectories = true
+        
+        panel.begin { (result) in
+            
+            if result == NSFileHandlingPanelOKButton{
+            
+                self.textField.stringValue = (panel.url!.path)
+                
+                if self.webServer.isRunning{
+                    
+                    self.webServer.stop()
+                }
+                
+                //初始化本地静态服务器
+                self.initGCDWebServer(serverPath: self.textField.stringValue)
+            }
+            
+        }
+    }
+    
+    
+    //本地静态服务器并加载资源
     private func initGCDWebServer(serverPath:String){
         
         self.webServer.addGETHandler(forBasePath: "/", directoryPath: serverPath, indexFilename: nil, cacheAge: 3600, allowRangeRequests: true)
@@ -112,42 +159,12 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         
         self.floorPlanImgView.sizeToFit()
         
-        
-        
-    }
-    @IBAction func selectFile(_ sender: NSButton) {
-        
-        self.openPanel(path: nil)
-    }
-    private func openPanel(path:String?){
-    
-        let panel = NSOpenPanel.init()
-        
-        panel.canChooseDirectories = true
-        
-        panel.begin { (result) in
+        if let size = floorPlanImg?.size {
             
-            if result == NSFileHandlingPanelOKButton{
-            
-                self.textField.stringValue = (panel.url!.path)
-                
-                if self.webServer.isRunning{
-                    
-                    self.webServer.stop()
-                }
-                
-                //初始化本地静态服务器
-                self.initGCDWebServer(serverPath: self.textField.stringValue)
-                
-                
-            }
-            
+            self.sizeTextField.stringValue = "\(size.width) x \(size.height)"
         }
         
-    
     }
-    //获取tour.xml内的scene节点
-    
     
     //导出xml
     @IBAction func export(_ sender: NSButton) {
@@ -156,10 +173,7 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         
         fileManager.createFile("data.xml", toPath: self.textField.stringValue)
         
-//        <scene name="scene_ct" title="餐厅" onstart="" thumburl="panos/ct.tiles/thumb.jpg" lat="143" lng="336" heading="260">
-        
         var dataFile = String()
-        
         
         for item in self.dic {
             
@@ -178,42 +192,6 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         let xmlManager = XMLParserTool()
         
         xmlManager.createXMLFile(xmlString: "<root>" + dataFile + "</root>", savePath: self.textField.stringValue + "/data.xml")
-        
-        
-//        let doc = try! GDataXMLDocument(xmlString: String.init(contentsOfFile: "\(self.textField.stringValue)/vtour/tour.xml"))
-//        
-//        let root = doc.rootElement()
-//        
-//        let elements = root?.elements(forName: "scene") as! [GDataXMLElement]
-//        
-//        for element in elements {
-//            
-//            guard let sceneName = element.attribute(forName: "title") else {
-//                return
-//            }
-//            
-//            print(sceneName.stringValue())
-//            
-//            //坐标
-//            let locationX = element.attribute(forName: "lat")
-//            let locationY = element.attribute(forName: "lng")
-//            
-//            //角度
-//            let rotation = element.attribute(forName: "heading")
-//            
-//            guard let mod = self.dic[sceneName.stringValue()] else {
-//                
-//                return
-//            }
-//            
-//            locationX?.setStringValue("\(mod.center.x)")
-//            
-//            locationY?.setStringValue("\(mod.center.y)")
-//            
-//            rotation?.setStringValue("\(mod.rotation)")
-//            
-//        }
-        
     }
 
     override var representedObject: Any? {
@@ -222,7 +200,7 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         }
     }
     
-    //确认添加
+    //确认添加空间导航点
     @IBAction func countersignNavigationDot(_ sender: NSButton) {
                 
         let imageView = NSImageView.init(frame: NSRect.init(x: self.navigationImageView.center.x - 5, y: self.navigationImageView.center.y - 5, width: 10, height: 10))
@@ -244,17 +222,6 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         self.navigationImageView.removeFromSuperview()
         
     }
-}
-
-//WKWebView
-extension ViewController:WKNavigationDelegate{
-
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        
-//        print(<#T##items: Any...##Any#>)
-        
-    }
-
 }
 
 extension ViewController:NSMenuDelegate{
