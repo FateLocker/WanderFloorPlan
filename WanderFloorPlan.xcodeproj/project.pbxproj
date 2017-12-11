@@ -13,6 +13,7 @@
 		852916721FB2DEDA002C54A4 /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 852916711FB2DEDA002C54A4 /* map@2x.png */; };
 		854BDD911FCBB9D0007130C6 /* navigationImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 854BDD901FCBB9D0007130C6 /* navigationImage.png */; };
 		854BDD931FCBEBA5007130C6 /* MathematicalFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854BDD921FCBEBA5007130C6 /* MathematicalFormula.swift */; };
+		856520151FDE5219000730A1 /* DotImgaeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856520141FDE5219000730A1 /* DotImgaeView.swift */; };
 		8566E34A1FC7EE2D00ACB37F /* IMInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8566E3491FC7EE2D00ACB37F /* IMInstance.swift */; };
 		8583C8901FC559B400AA64D7 /* MouseEventImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583C88F1FC559B400AA64D7 /* MouseEventImageView.swift */; };
 		858821351FCD3E3A00014A44 /* XMLParserTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858821341FCD3E3A00014A44 /* XMLParserTool.swift */; };
@@ -51,6 +52,7 @@
 		852916711FB2DEDA002C54A4 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map@2x.png"; sourceTree = "<group>"; };
 		854BDD901FCBB9D0007130C6 /* navigationImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationImage.png; sourceTree = "<group>"; };
 		854BDD921FCBEBA5007130C6 /* MathematicalFormula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathematicalFormula.swift; sourceTree = "<group>"; };
+		856520141FDE5219000730A1 /* DotImgaeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotImgaeView.swift; sourceTree = "<group>"; };
 		8566E3491FC7EE2D00ACB37F /* IMInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMInstance.swift; sourceTree = "<group>"; };
 		8583C88F1FC559B400AA64D7 /* MouseEventImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MouseEventImageView.swift; sourceTree = "<group>"; };
 		858821341FCD3E3A00014A44 /* XMLParserTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParserTool.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				8583C88F1FC559B400AA64D7 /* MouseEventImageView.swift */,
 				8566E3491FC7EE2D00ACB37F /* IMInstance.swift */,
 				854BDD921FCBEBA5007130C6 /* MathematicalFormula.swift */,
+				856520141FDE5219000730A1 /* DotImgaeView.swift */,
 			);
 			path = WanderFloorPlan;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 			files = (
 				8583C8901FC559B400AA64D7 /* MouseEventImageView.swift in Sources */,
 				85C846351FB05826009801CF /* ViewController.swift in Sources */,
+				856520151FDE5219000730A1 /* DotImgaeView.swift in Sources */,
 				85C846331FB05826009801CF /* AppDelegate.swift in Sources */,
 				854BDD931FCBEBA5007130C6 /* MathematicalFormula.swift in Sources */,
 				858821351FCD3E3A00014A44 /* XMLParserTool.swift in Sources */,

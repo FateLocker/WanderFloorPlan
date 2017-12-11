@@ -10,8 +10,15 @@ import Cocoa
 import WebKit
 import GCDWebServer
 
+protocol ViewControllerDelegate {
+    
+    func removeSelf()
+}
 
-class ViewController: NSViewController,WebFrameLoadDelegate{
+
+class ViewController: NSViewController,WebFrameLoadDelegate,NSApplicationDelegate{
+    
+    var delegate:ViewControllerDelegate?
     
     @IBOutlet weak var customView: NSView!
     
@@ -28,15 +35,20 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
     @IBOutlet weak var backView: NSView!
     
     @IBOutlet weak var sizeTextField: NSTextField!
+    
     var webView = WKWebView()
-    
-    
+
     var navigationImageView = MouseEventImageView()
-    
     
     var dic:Dictionary<String,MouseEventImageView> = [:]
     
     let webServer = GCDWebServer()
+    
+    lazy var dotArr:[DotImgaeView] = {
+    
+        return []
+    }()
+    
     
     override func viewDidLoad() {
         
@@ -47,6 +59,23 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         self.initFloorPlanImageView()
         
         self.initWebView()
+        
+        //关闭按钮直接退出程序
+        
+        let mainWindow = NSWindowController()
+        
+        NSApp.delegate = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(closeWindow), name: .NSWindowWillClose, object: mainWindow)
+    }
+    func closeWindow(){
+        
+        NSApp.terminate(self)
+    }
+    
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        
+        return true
     }
     
     //初始化网页视图
@@ -97,7 +126,7 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         
         self.floorPlanImgView.isEnabled = true
         
-        let imageMenu = NSMenu()
+        let imageMenu = NSMenu(title: "添加")
         
         self.floorPlanImgView.menu = imageMenu
         
@@ -203,7 +232,7 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
     //确认添加空间导航点
     @IBAction func countersignNavigationDot(_ sender: NSButton) {
                 
-        let imageView = NSImageView.init(frame: NSRect.init(x: self.navigationImageView.center.x - 5, y: self.navigationImageView.center.y - 5, width: 10, height: 10))
+        let imageView = DotImgaeView.init(frame: NSRect.init(x: self.navigationImageView.center.x - 5, y: self.navigationImageView.center.y - 5, width: 10, height: 10))
         
         imageView.wantsLayer = true
         
@@ -213,13 +242,34 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
         
         imageView.setNeedsDisplay()
         
+//        imageView.delegate = self
+        
+//        let dotBtn = NSButton.init(frame: NSRect.init(x: self.navigationImageView.center.x - 5, y: self.navigationImageView.center.y - 5, width: 10, height: 10))
+//        
+//        dotBtn.mouseDown(with: <#T##NSEvent#>)
+        
+        
+        //删除导航点
+        
+        imageView.isEnabled = true
+        
+        let delMenu = NSMenu(title: "删除")
+        
+        imageView.menu = delMenu
+        
+        delMenu.delegate = self
+        
         self.floorPlanImgView.addSubview(imageView)
         
         self.navigationImageView.imageViewName = self.spaceName.stringValue
         
         self.dic.updateValue(self.navigationImageView, forKey: navigationImageView.imageViewName)
         
+        imageView.id = self.navigationImageView.imageViewName
+        
         self.navigationImageView.removeFromSuperview()
+        
+        self.dotArr.append(imageView)
         
     }
 }
@@ -227,8 +277,18 @@ class ViewController: NSViewController,WebFrameLoadDelegate{
 extension ViewController:NSMenuDelegate{
     
     func menuNeedsUpdate(_ menu: NSMenu) {
+        
         menu.removeAllItems()
-        menu.addItem(NSMenuItem.init(title: "添加导航点", action: #selector(addPlanDot), keyEquivalent: ""))
+        
+        if menu.title == "添加" {
+            
+            menu.addItem(NSMenuItem.init(title: "添加导航点", action: #selector(addPlanDot), keyEquivalent: ""))
+            
+        }else if menu.title == "删除"{
+            
+            menu.addItem(NSMenuItem.init(title: "删除导航点", action: #selector(removePlanDot), keyEquivalent: ""))
+        
+        }
         
     }
     
@@ -245,6 +305,21 @@ extension ViewController:NSMenuDelegate{
         self.navigationImageView.image = navigationImage
         
         self.floorPlanImgView.addSubview(self.navigationImageView)
+        
+    }
+    
+    func removePlanDot(menu:NSMenu) {
+        
+        for item in self.dotArr {
+            
+            if item.selected{
+                
+                item.removeFromSuperview()
+                
+                self.dic.removeValue(forKey: item.id)
+                
+            }
+        }
         
     }
 }
