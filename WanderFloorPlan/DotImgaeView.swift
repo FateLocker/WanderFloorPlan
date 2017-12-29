@@ -33,15 +33,7 @@ class DotImgaeView: NSImageView{
         
         self.layer?.cornerRadius = 5
         
-        if selected {
-            
-            self.layer?.backgroundColor = NSColor.gray.cgColor
-            
-        }else{
-            
-            self.layer?.backgroundColor = NSColor.green.cgColor
-        
-        }
+        self.layer?.backgroundColor = selected ? NSColor.gray.cgColor:NSColor.green.cgColor
         
         self.setNeedsDisplay()
     }

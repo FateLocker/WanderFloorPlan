@@ -242,13 +242,6 @@ class ViewController: NSViewController,WebFrameLoadDelegate,NSApplicationDelegat
         
         imageView.setNeedsDisplay()
         
-//        imageView.delegate = self
-        
-//        let dotBtn = NSButton.init(frame: NSRect.init(x: self.navigationImageView.center.x - 5, y: self.navigationImageView.center.y - 5, width: 10, height: 10))
-//        
-//        dotBtn.mouseDown(with: <#T##NSEvent#>)
-        
-        
         //删除导航点
         
         imageView.isEnabled = true
